@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | DM Web Solutions by Darragh Morrissey</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>DM Web Solutions</h1>
+    <span>by Darragh Morrissey</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#pricing">Pricing</a>
+  </nav>
+</header>
+
+<section class="hero" style="border-radius:0;">
+  <h2>Get a Free Quote</h2>
+  <p>Tell us about your business and what kind of website you’d like. We’ll get back to you within 24 hours.</p>
+</section>
+
+<section id="contact-form">
+  <h3>Contact Form</h3>
+
+  <form action="https://formspree.io/f/mwprjnge" method="POST">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="Name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="Phone" placeholder="Your Phone">
+    </div>
+    <div class="form-group">
+      <label for="business">Business Name</label>
+      <input type="text" id="business" name="Business" placeholder="Business or Service Name">
+    </div>
+    <div class="form-group">
+      <label for="message">Project Details</label>
+      <textarea id="message" name="Message" rows="5" placeholder="Tell us about your website goals..."></textarea>
+    </div>
+
+    <input type="hidden" name="_subject" value="New Contact Form Submission from DM Web Solutions">
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 <span>DM Web Solutions</span> | Designed by <span>Darragh Morrissey</span> | Kildare, Ireland</p>
+</footer>
+
+<a href="contact.html" class="floating-contact">Contact Us 💬</a>
+</body>
+</html>
