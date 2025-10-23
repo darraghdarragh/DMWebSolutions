@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You | DM Web Solutions</title>
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
+  <div id="preloader"><div class="loader"></div></div>
 
-<header>
-  <div>
-    <h1>DM Web Solutions</h1>
-    <span>by Darragh Morrissey</span>
-  </div>
-</header>
+  <header class="site-header" id="header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html"><span class="logo-dot"></span><strong>DM Web Solutions</strong></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" title="Toggle theme">
+          <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
 
-<section class="hero" style="border-radius:0;">
-  <h2>Thank You!</h2>
-  <p>Your message has been sent successfully.<br>We’ll be in touch shortly to discuss your project.</p>
-  <a href="index.html" class="btn">Return Home</a>
-</section>
+  <section class="hero">
+    <h1>Thank You!</h1>
+    <p class="lead">Your message has been received. We’ll get back to you soon.</p>
+    <div class="hero-actions">
+      <a href="index.html" class="btn">Back to Home</a>
+      <a href="portfolio.html" class="btn-ghost">View Our Work</a>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2025 <span>DM Web Solutions</span> | Designed by <span>Darragh Morrissey</span> | Kildare, Ireland</p>
-</footer>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> DM Web Solutions — Thank You for Reaching Out!</p>
+  </footer>
 
-<a href="contact.html" class="floating-contact">Contact Us 💬</a>
+  <button id="floatingTheme" class="floating-theme" title="Toggle theme">🌙</button>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
